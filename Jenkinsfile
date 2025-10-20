@@ -7,19 +7,11 @@ pipeline {
     }
 
     stages {
-        stage('Hello') {
-            steps {
-                echo 'Hello World'
-                sh """
-                    echo 'Hello class'
-                """
-            }
-        }
         stage("Repo Clone") {
             steps {
 
                 echo "Project Cloning..."
-                gitt url: "${GIT_REPO_LINK}",
+                git url: "${GIT_REPO_LINK}",
                     branch: "${REPO_BRANCH}"
 
                 sh "ls -lah"
