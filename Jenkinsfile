@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         GIT_REPO_LINK = 'https://github.com/mahadihassanrazib/full-stack-crud-project-with-react-node-mysql.git'
-        REPO_BRANCH = 'main'
+        REPO_BRANCH = 'development'
     }
 
     stages {
